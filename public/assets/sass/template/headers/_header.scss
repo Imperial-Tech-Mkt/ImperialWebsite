@@ -98,7 +98,7 @@
     ul.sub-menu {
         position: absolute;
         text-align: left;
-        top: 100%;
+        top: 75%;
         left: 0;
         background-color: $title-color;
         visibility: hidden;
@@ -335,10 +335,10 @@
 .sidebar-btn {
     background: transparent;
     position: relative;
-    height: 60px;
-    width: 60px;
-    border: 2px solid $title-color;
-    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    border: 2px solid #fef8f8;
+    border-radius: 0%;
     text-align: center;
     line-height: 54px;
     padding: 0;
@@ -363,8 +363,8 @@
 }
 @include xs {
     .sidebar-btn {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
     }
 }
 /* Header 1 ---------------------------------- */
@@ -387,53 +387,52 @@
 
 /* Header 2 ---------------------------------- */
 .header-layout2 {
-    position: absolute;
-    top: 0;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 55%, rgba(255, 255, 255, 0.05) 100%);    position: absolute;
     left: 0;
     right: 0;
     .sticky-wrapper {
         padding: 0px 36px;
         .header-links {
             a {
-                color: $white-color;
+                color: $body-color;
             }
         }
     }
     .main-menu > ul > li > a {
         padding: 44.5px 20px;
-        color: $white-color;
+        color: $body-color;
         &:before {
-            border-color: $white-color;
+            border-color: $body-color;
         }
         &:hover {
             &:before {
-                background: $white-color;
+                background: $body-color;
             }
         }
     }
     .main-menu ul.sub-menu {
-        background: $white-color;
+        background: #fff;
         a {
-            color: $title-color;
+            color: $body-color;
         }
         & li.active {
             & > a {
-                color: $title-color;
+                color: $body-color;
             }
         }
         .menu-item-has-children > a:before,
         .menu-item-has-children > a:after {
-            background: $title-color;
+            background: $body-color;
         }
     }
     .header-button .search-btn {
-        color: $white-color;
+        color: $body-color;
     }
     .sticky-wrapper.header-sticky {
-        background: $title-color;
+        background: #fff;
     }
     .sidebar-btn {
-        border-color: $white-color;
+        border-color: #dcdada;
         margin: 25px 0;
         .line {
             background: $white-color;
@@ -447,9 +446,18 @@
             margin: 0;
         }
     }
+    @include sm {
+        .header-logo {
+            padding-top: 0;
+        }
+        .line{
+            
+            background: black !important;
+        }
+    }
     @include xs {
         .sticky-wrapper {
-            padding: 15px 0px;
+            padding: 10px 0px;
         }
     }
 }

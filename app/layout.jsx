@@ -7,7 +7,7 @@ import "../public/assets/sass/style.scss";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ScrollTop from "@/components/common/ScrollTop";
 import "rc-slider/assets/index.css";
-import { Unbounded, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import ScrollTopBehaviour from "@/components/common/ScrollTopBehavier";
 import Context from "@/context/Context";
 if (typeof window !== "undefined") {
@@ -17,11 +17,7 @@ if (typeof window !== "undefined") {
 }
 // wow js
 
-const unbounded = Unbounded({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--title-font",
-});
+
 
 // Poppins font
 const poppins = Poppins({
@@ -47,7 +43,7 @@ export default function RootLayout({ children }) {
   //}, [path]);
   return (
     <html lang="en">
-      <body className={`body  ${poppins.variable} ${unbounded.variable}`}>
+      <body className={`body  ${poppins.variable} `}>
         <Context>
           <ParallaxProvider>{children}</ParallaxProvider>
           <ScrollTop />

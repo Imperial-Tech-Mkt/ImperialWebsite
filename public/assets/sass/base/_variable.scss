@@ -1,5 +1,6 @@
 :root {
-  --theme-color         : #E3FF04;
+  --theme-color         : #cf1338;
+  --secondary-color     : #0f7fab;
   --title-color         : #0A0C00;
   --body-color          : #0A0C00;
   --smoke-color         : #F6F5F3;
@@ -15,7 +16,7 @@
   --success-color       : #28a745;
   --error-color         : #dc3545;
   --border-color        : #E3E3E3;
-  --title-font          : 'Unbounded', sans-serif;
+  --title-font          : 'Poppins', sans-serif;
   --body-font           : 'Poppins', sans-serif;
   --icon-font           : "Font Awesome 5 Free";
   --main-container      : 1296px;
@@ -27,6 +28,7 @@
 }
 // Color Variation
 $theme-color          : var(--theme-color);
+$secondary-color      : var(--secondary-color);
 $title-color          : var(--title-color);
 $body-color           : var(--body-color);
 $smoke-color          : var(--smoke-color);

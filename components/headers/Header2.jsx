@@ -6,6 +6,7 @@ import Nav from "./component/Nav";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { auto } from "@popperjs/core";
 export default function Header2() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,12 +72,15 @@ export default function Header2() {
           <div className="mobile-logo">
             <Link scroll={false} href="/">
               <Image
-                width={86}
-                height={24}
+                width={150}
+                height={100}
                 src="/assets/img/logo.svg"
                 alt="Ovation"
               />
             </Link>
+            <div className="hero-contact-wrap">
+              <a href="tel:16309251800">+1 630-925-1800</a>
+            </div>
           </div>
           <div className="mobile-menu">
             <ul>
@@ -84,7 +88,7 @@ export default function Header2() {
             </ul>
           </div>
           <div className="sidebar-wrap">
-            <h6>27 Division St, New York,</h6>
+            <h6>Janitorial and Commercial cleaning services</h6>
             <h6>NY 10002, USA</h6>
           </div>
           <div className="sidebar-wrap">
@@ -113,15 +117,19 @@ export default function Header2() {
                   <div className="header-logo">
                     <Link scroll={false} href="/">
                       <Image
-                        width={86}
-                        height={24}
-                        src="/assets/img/logo-white-sm.svg"
+                        width={125}
+                        height={100}
+                        src="/assets/img/logo.svg"
                         alt="logo"
                       />
                     </Link>
+                    <div className="header-contact">
+                        <a className="header-phone" href="tel:16309251800">630-925-1800</a>
+                    </div>
                   </div>
                 </div>
                 <div className="col-auto ms-auto">
+                  
                   <nav className="main-menu d-none d-lg-inline-block">
                     <ul>
                       {" "}

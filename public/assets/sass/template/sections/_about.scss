@@ -23,22 +23,26 @@
         }
     }
 }
-
+// THIS IS IN THE HOME PAGE
 .marquee-wrap {
-    background: #1601AC;
+    background: #ffffff;
     padding: 31px 0;
+    border-bottom: 6px solid $secondary-color;
+    border-top: 6px solid $secondary-color;
     .marquee__group {
         .m-item {
             margin-right: 25px;
             display: inline;
             a {
-                color: $smoke-color;
+                color: $body-color;
                 font-size: 36px;
                 font-weight: 600;
                 font-family: $title-font;
+                text-decoration: underline;
+                margin-right: 15px;
                 i {
                     color: $theme-color;
-                    margin-right: 20px;
+                    margin-right: 5px;
                 }
                 @include sm {
                     font-size: 30px;

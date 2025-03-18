@@ -38,10 +38,10 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
-    font-family: $title-font;
+    font-family: 'Roboto';
     color: $title-color;
     text-align: left;
-    margin-left: 16px;
+    margin-left: 18px;
     text-transform: uppercase;
     letter-spacing: -0.14px;
   }
@@ -155,7 +155,7 @@
 }
 /* Hero 2 ---------------------------------- */
 .hero-2 {
-  background: $title-color;
+  background: #fff;
   .hero-2-thumb {
     position: absolute;
     right: 0;
@@ -172,6 +172,15 @@
   padding: 208px 0 72px;
   .hero-title {
     font-size: 100px;
+    color: $secondary-color;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.42);
+    border-radius: 0px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.53);
+    width: min-content;
   }
   .hero-text {
     margin-top: 26px;
@@ -181,13 +190,14 @@
     margin-bottom: 43px;
   }
   .hero-contact-wrap {
-    color: $white-color;
+    color: $body-color;
     font-family: $title-font;
-    max-width: 306px;
+    // max-width: 306px;
+    overflow-wrap: break-word;
     display: inline-block;
     margin-top: 30px;
     a {
-      color: $white-color;
+      color: $body-color;
     }
     &:not(:last-child) {
       margin-right: 18px;
@@ -198,10 +208,13 @@
   .hero-2 .hero-2-thumb {
     width: 900px;
   }
+
+
 }
 @include ml {
   .hero-style2 .hero-title {
     font-size: 80px;
+    
   }
   .hero-2 .hero-2-thumb {
     height: 676px;
@@ -209,13 +222,16 @@
       height: 676px;
     }
   }
+
 }
 @include xl {
+
   .hero-2 .hero-2-thumb {
     width: 730px;
   }
 }
 @include lg {
+
   .hero-style2 .hero-title {
     font-size: 70px;
   }
@@ -236,6 +252,9 @@
   }
 }
 @include sm {
+  .hero-img-container{
+      padding-top: 15%;
+  }
   .hero-style2 .hero-title {
     font-size: 50px;
   }
@@ -247,7 +266,14 @@
     }
   }
   .hero-style2 .hero-contact-wrap {
-    max-width: 246px;
+    width: 100%;
+    margin-top: 0;
+  }
+  .hero-style2 .hero-title {
+    width: 100%;
+  }
+  .locations{ 
+    font-size: large;
   }
 }
 @include xs {
@@ -263,7 +289,7 @@
     font-size: 40px;
   }
   .hero-style2 {
-    padding: 80px 0 72px;
+    padding: 0px 0 72px;
   }
   .hero-style2 .btn {
     margin-bottom: 33px;
@@ -277,10 +303,11 @@
 
 /* Hero 3 ---------------------------------- */
 .hero-3 {
-  background-image: -webkit-linear-gradient(to top, $smoke-color, $smoke-color);
-  background-image: linear-gradient(to top, $smoke-color, $smoke-color);
-  background-size: 100% calc(100% - 582px);
-  background-repeat: no-repeat;
+  // glassmorphism
+  // background-image: -webkit-linear-gradient(to top, $smoke-color, $smoke-color);
+  // background-image: linear-gradient(to top, $smoke-color, $smoke-color);
+  // background-size: 100% calc(100% - 582px);
+  // background-repeat: no-repeat;
   @include md {
     background: transparent;
   }
@@ -640,4 +667,60 @@
   .hero-style8 .hero-subtitle {
     font-size: 24px;
   }
+}
+
+
+// MARCELO STYLES
+
+.contact-and-locations{
+  color: $body-color;
+}
+
+.header-contact{
+  display: inline;
+  margin-left: 15px;
+  margin-top: 5px;
+  color: black;
+  text-decoration: underline rgb(24, 24, 222);
+}
+.header-phone{
+  color: $body-color;
+  margin-top: 5px;
+}
+.hero-contact-wrap{
+  width: 100%;
+}
+.locations{
+  margin-top: 0;
+}
+.location-link{
+  text-decoration: underline rgb(24, 24, 222);
+}
+
+// 
+@keyframes rotating {
+  from{
+      transform: rotate(0deg);
+      // transform: scaleX(2);
+      // transform: skew(-10deg);
+      
+  }
+  to{
+      transform: rotate(360deg);
+      // transform: scaleX(-2);
+      // transform: skew(0);
+      
+  }
+
+}
+.hero-image-background{
+  // width: 1000px;
+  // background: rgb(12,97,130);
+  // background: linear-gradient(0deg, rgba(12,97,130,1) 0%, rgba(255,255,255,1) 18%, rgba(12,97,130,1) 41%, rgba(255,255,255,1) 78%); 
+  // z-index: -1;
+  // animation: rotating 5s linear infinite;
+  // height: 1000px;
+  // position: absolute;
+  // opacity: 0.3;
+  // left: -50px;
 }

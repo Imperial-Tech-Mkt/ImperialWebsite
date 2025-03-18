@@ -1,0 +1,27 @@
+.glanceTitle{
+    text-decoration: #cf1338 4px underline;
+}
+.highlightsContainer{
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.highlight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+}
+.number{
+    color: #0f7fab;
+    font-size: 2.25em;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+}
+.text{
+    font-size: 1.5em;
+}
