@@ -1,8 +1,8 @@
 import React from 'react';
-
+// TODO: get the new styles working for this component
 const ImperialAtAGlance = () => {
     return (
-        <div>
+        <div className="glanceContainer">
             <h3 className="glanceTitle">Imperial Service Systems<br/>- At A Glance</h3>
             <div className="highlightsContainer">
                 <div className="highlight">

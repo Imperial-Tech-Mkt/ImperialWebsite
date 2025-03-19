@@ -44,11 +44,6 @@ export default function MarqueeComponent() {
         <div className="marquee_mode marquee__group">
           <Marquee pauseOnHover={false}>
             {marQueeItems.map((elm, i) => (
-              // <h6 key={i} className="item m-item">
-              //   <a href={elm.href}>
-              //     <i className={elm.icon}></i> {elm.text}
-              //   </a>
-              // </h6>
               <CustomerLogo 
                 key={i} 
                 imageUrl={elm.href} 
@@ -58,6 +53,9 @@ export default function MarqueeComponent() {
             ))}
           </Marquee>
         </div>
+      </div>
+      <div className="logos-supportive-text">
+        Our strong customer partnerships, built on simple <span className="fw-bold">30-day agreements no long-term contracts</span> prove our system works!
       </div>
     </div>
   );

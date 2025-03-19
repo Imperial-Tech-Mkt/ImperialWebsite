@@ -123,3 +123,23 @@
 .rc-slider .rc-slider-tracks {
   background-color: var(--title-color);
 }
+
+
+// MARCELO
+
+// Marquee LOGO section
+.logos-supportive-text{
+    text-align: center;
+    font-size: 1.25em;
+    width: 60%;
+    margin: 1.5% auto;
+    font-style: italic;
+    line-height: 1.25em;
+}
+
+@include md {
+    .logos-supportive-text{
+        font-size: 1.1em;
+        width: 90%;
+    }
+}
