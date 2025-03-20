@@ -2,7 +2,7 @@ import Header2 from "@/components/headers/Header2";
 import SearchPopup from "@/components/headers/component/SearchPopup";
 import Blogs from "@/components/homes/home-2/Blogs";
 import Awards from "@/components/homes/common/Awards";
-import Features from "@/components/homes/home-2/Features";
+import Services from "@/components/homes/home-2/Services";
 import Hero from "@/components/homes/home-2/Hero";
 
 import Portfolio from "@/components/homes/home-2/Portfolio";
@@ -26,10 +26,9 @@ export default function HomePage2() {
       <Hero />
       <ImperialAtAGlance />
       <MarqueeComponent />
-      <Features />
+      <Services />
       <Skills />
       <Portfolio />
-
       <Awards />
       <Video />
       <Blogs />

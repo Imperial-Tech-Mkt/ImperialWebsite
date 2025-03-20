@@ -20,10 +20,5 @@ const CustomerLogo = ({ imageUrl, companyName, startDate }) => {
     );
 };
 
-// CustomerLogo.propTypes = {
-//     imageUrl: PropTypes.string.isRequired,
-//     companyName: PropTypes.string.isRequired,
-//     startDate: PropTypes.string.isRequired,
-// };
 
 export default CustomerLogo;

@@ -1,9 +1,10 @@
 /*feature area 1***********************/
 .feature-card {
-    background: $smoke-color;
-    padding: 40px 36px;
+    background: #fff;
+    // padding: 20px 18px;
+    padding: 2%;
     &-icon {
-        margin-bottom: 74px;
+        margin-bottom: 37px;
     }
     &-title {
         a {
@@ -127,5 +128,98 @@
         img {
             filter: brightness(99) grayscale(99);
         }
+    }
+}
+
+// MARCELO 
+.services-area-home{
+    overflow-x: hidden !important;
+}
+.services-card-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+
+}
+.services-title{
+    text-align: center;
+}
+.service-card{
+    width: 25%;
+    // background-color: #fefafa;
+    border:  1px solid #ededed;
+    padding-bottom: 1%;
+}
+// .feature-card{
+   
+// }
+.service-images{
+    display: flex;
+    flex-direction: row;
+    width: 100%;;
+    justify-content: space-between;
+    padding-top: 4%;
+   
+}
+.service-thumbnail{
+    box-shadow: $theme-shadow;
+    width: 48%;
+    height: auto;
+}
+.feature-card-title{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 4%;
+}
+.all-services-link-container{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.all-services-link{
+    font-size: 1.5em;
+    color: black;
+    text-decoration: underline solid $theme-color !important;
+}
+.service-link{
+    color: $body-color;
+}
+
+@include hd{
+    .service-card{
+        width: 20%;
+    }
+    .all-services-link-container {
+        font-size: 1.5em;
+        line-height: 1.25em;
+    }
+    .all-services-link{
+        font-size: 1.5em;
+        color: black;
+        // text-decoration: underline solid $theme-color !important;
+        text-decoration: #cf1338 underline;
+    }
+}
+@include md {
+    .services-card-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-card{
+        width: 90%;
+    }
+    .all-services-link-container{
+        width: 90%;
+    }
+    .all-services-link{
+        font-size: 1.5em;
+        color: black;
+        // text-decoration: underline solid $theme-color !important;
+        text-decoration: #cf1338 underline !important;
     }
 }
