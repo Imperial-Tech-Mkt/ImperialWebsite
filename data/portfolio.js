@@ -1,46 +1,18 @@
 export const portfolioData = [
   {
     id: 1,
-    imageSrc: "/assets/img/portfolio/portfolio1_1.jpg",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Money Laundering Compliance Scanner",
-    title: "Decentralized Platform",
+    name: "Ex. Direct. Mimi Weisberg, Anshe Emet Synagogue",
+    testimonial: "I just wanted to let you know that our Holy Days are the most traveled days in our building and because of your     crew, we were able to serve our congregational family, flawlessly! Your team is professional and kind and willing to do whatever we put in front of them. Gilberto is extremely grateful to have been able to manage your crew to ensure that we had an efficient process.",  
   },
   {
     id: 2,
-    imageSrc: "/assets/img/portfolio/portfolio1_2.jpg",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Decentralized Lending Platform for Students",
-    title: "App for Business",
+    name: "Adrienne Murphy, Expeditors Chicago",
+    testimonial: "Imperial does such a great job at all our locations. We are very happy with their level of service and their prompt response on any issue that come up."
   },
   {
     id: 3,
-    imageSrc: "/assets/img/portfolio/portfolio1_3.jpg",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Anti Money Laundering Compliance Scanner",
-    title: "Website Development",
-  },
-  {
-    id: 4,
-    imageSrc: "/assets/img/portfolio/portfolio1_4.jpg",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Shopify Redesign for a Nova Scotia Winery",
-    title: "Nova Scotia Winery",
-  },
-  {
-    id: 5,
-    imageSrc: "/assets/img/portfolio/portfolio1_5.png",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle: "Trading Website Design & Development",
-    title: "Educational Platform",
-  },
-  {
-    id: 6,
-    imageSrc: "/assets/img/portfolio/portfolio1_6.png",
-    categoryLinks: ["Branding", "Development", "Marketing"],
-    projectTitle:
-      "Shopify Redesign for a Nova Scotia WineryProduct Lineup Industrial Design for Caramba",
-    title: "Educational Platform",
+    name: "Tom Reboletti, Medinah on the Lakes.",
+    testimonial: "I just wanted to let you know how pleased we are with Imperial’s service in our condo building, the place looks great, and residents are extremely happy how clean the building is. Our thanks to your crew at Medinah on the Lakes in Bloomingdale, IL."
   },
 ];
 

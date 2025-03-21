@@ -15,6 +15,8 @@ import Footer2 from "@/components/footers/Footer2";
 import MarqueeComponent from "@/components/common/Marquee";
 import ImperialAtAGlance from "@/components/common/ImperialAtAGlance";
 
+import Testimonials from "@/components/common/Testimonials";
+
 export const metadata = {
   title: "Home 2 || Frisk - Creative Agency & Portfolio Nextjs Template",
 };
@@ -27,13 +29,14 @@ export default function HomePage2() {
       <ImperialAtAGlance />
       <MarqueeComponent />
       <Services />
-      <Skills />
+      <Testimonials />
+      {/* <Skills />
       <Portfolio />
       <Awards />
       <Video />
       <Blogs />
       <Clients />
-      <Cta />
+      <Cta /> */}
       <Footer2 />
     </>
   );

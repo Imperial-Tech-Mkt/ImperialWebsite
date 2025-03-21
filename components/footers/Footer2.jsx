@@ -7,69 +7,29 @@ export default function Footer2() {
   return (
     <footer className="footer-wrapper footer-layout2 bg-white overflow-hidden">
       <div className="container">
-        <div className="widget-area space-top">
-          <div className="row justify-content-between">
-            <div className="col-md-6 col-xl-5 col-lg-6">
-              <div className="widget widget-newsletter footer-widget">
-                <h3 className="widget_title">
-                  Get valuable strategy, culture and brand insights straight to
-                  your inbox
-                </h3>
-                <form
-                  onSubmit={(e) => e.preventDefault()}
-                  className="newsletter-form"
-                >
-                  <div className="form-group">
-                    <input
-                      className="form-control"
-                      type="email"
-                      placeholder="Your email here"
-                      required=""
-                    />
-                  </div>
-                  <button type="submit" className="btn">
-                    <Image
-                      width={13}
-                      height={13}
-                      src="/assets/img/icon/arrow-left-top.svg"
-                      alt="icon"
-                    />
-                  </button>
-                </form>
-                <p>
-                  By signing up to receive emails from Motto, you agree to our
-                  Privacy Policy. We treat your info responsibly.
-                </p>
-              </div>
+          <div className="row justify-content-between footer-info-container">
+            <div className="footer-logo-container">
+              <Image src="/assets/img/logo.svg" className="footer-logo" alt="logo" width={300} height={600} />
             </div>
-            <div className="col-md-3 col-xl-2 col-lg-3">
-              <div className="widget widget_nav_menu footer-widget">
-                <h3 className="widget_title">Links</h3>
+              <div className="widget widget_nav_menu footer-widget footer-links">
                 <div className="menu-all-pages-container list-column2">
                   <ul className="menu">
                     <FooterLinks3 />
                   </ul>
                 </div>
               </div>
-            </div>
-            <div className="col-md-6 col-xl-auto col-lg-4">
-              <div className="widget footer-widget widget-contact">
-                <h3 className="widget_title">Contact</h3>
+              <div className="widget footer-widget widget-contact footer-contact">
+                <h3 className="widget_title">Headquarter</h3>
                 <ul className="contact-info-list">
                   <li>
-                    27 Division St, New York, <br /> NY 10002, USA
+                  1815 S. Meyers Rd. Ste. 200 Oakbrook Terrace , IL  60181
                   </li>
                   <li>
-                    <a href="tel:1800123654987">+1 800 123 654 987</a>
-                    <br />
-                    <a href="mailto:frisk.agency@mail.com">
-                      frisk.agency@mail.com
-                    </a>
+                    <a href="tel:16309251800">+1 630 925 1800</a>
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
+
         </div>
       </div>
       <div className="container">
@@ -79,7 +39,7 @@ export default function Footer2() {
               <p className="copyright-text">
                 Copyright © {new Date().getFullYear()}{" "}
                 <a href="https://themeforest.net/user/ib-themes/portfolio">
-                  ib-themes
+                  Imperial Service Systems, Inc.
                 </a>
               </p>
             </div>

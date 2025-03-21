@@ -36,7 +36,7 @@ export default function MarqueeComponent() {
   ];
   return (
     <div className="container-fluid p-0 overflow-hidden">
-      <h3 className="text-center">Some of our customers</h3>
+      <h3 className="text-center">Long lasting customer relationships</h3>
       <div 
         className={"slider__marquee clearfix marquee-wrap"}
         style={{padding: "0 !important"}}
@@ -55,7 +55,7 @@ export default function MarqueeComponent() {
         </div>
       </div>
       <div className="logos-supportive-text">
-        Our strong customer partnerships, built on simple <span className="fw-bold">30-day agreements no long-term contracts</span> prove our system works!
+        Our strong customer partnerships, built on simple <span className="fw-bold">30-day agreements, NO long-term contracts</span> is poof our system works!
       </div>
     </div>
   );
