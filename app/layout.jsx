@@ -10,6 +10,9 @@ import "rc-slider/assets/index.css";
 import { Poppins } from "next/font/google";
 import ScrollTopBehaviour from "@/components/common/ScrollTopBehavier";
 import Context from "@/context/Context";
+
+
+
 if (typeof window !== "undefined") {
   import("bootstrap/dist/js/bootstrap.esm").then((module) => {
     // Module is imported, you can access any exported functionality if
@@ -45,6 +48,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`body  ${poppins.variable} `}>
         <Context>
+          {/* <Header /> */}
           <ParallaxProvider>{children}</ParallaxProvider>
           <ScrollTop />
           <ScrollTopBehaviour />

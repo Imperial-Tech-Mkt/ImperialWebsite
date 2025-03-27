@@ -22,7 +22,7 @@ export default function Footer2() {
                 <h3 className="widget_title">Headquarter</h3>
                 <ul className="contact-info-list">
                   <li>
-                  1815 S. Meyers Rd. Ste. 200 Oakbrook Terrace , IL  60181
+                  1815 S. Meyers Rd. Ste. 200 Oakbrook Terrace, IL  60181
                   </li>
                   <li>
                     <a href="tel:16309251800">+1 630 925 1800</a>

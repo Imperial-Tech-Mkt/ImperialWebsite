@@ -45,15 +45,15 @@
         height: 10px;
         line-height: 0;
         border-radius: 9999px;
-        border: 1px solid $title-color;
-        background-color: transparent;
+        background-color: rgba(148, 148, 147, 0.33);
+        border: 0px solid $title-color;
         transition: all ease 0.4s;
         position: relative;
     }
 
     .slick-active {
         button {
-            background-color: $title-color;
+            background-color: $theme-color;
         }
     }
 }

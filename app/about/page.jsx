@@ -8,7 +8,7 @@ import Features from "@/components/about/Features";
 import Team from "@/components/about/Team";
 import MarqueeComponent from "@/components/common/Marquee";
 import Footer8 from "@/components/footers/Footer8";
-import Header3 from "@/components/headers/Header3";
+import Header from "@/components/headers/Header2";
 import React from "react";
 
 export const metadata = {
@@ -18,7 +18,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Header3 />
+      <Header />
       <Breadcumb />
       <Facts />
       <Features />
